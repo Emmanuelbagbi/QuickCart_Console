@@ -1,7 +1,8 @@
+# User.py
 class User:
     def __init__(self, username, password, role):
         self._username = username
-        self._password = password
+        self._password = password   
         self._role = role
 
     @property
@@ -16,4 +17,4 @@ class User:
         return self._password == password
 
     def display_menu(self):
-        pass
+        raise NotImplementedError("Subclasses must implement display_menu()")

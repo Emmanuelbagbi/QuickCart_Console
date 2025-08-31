@@ -1,3 +1,4 @@
+
 from User import User
 
 class Rider(User):
@@ -18,4 +19,4 @@ class Rider(User):
         self._assigned_orders.append(order)
 
     def view_assigned_orders(self):
-        return self._assigned_orders
+        return list(self._assigned_orders)

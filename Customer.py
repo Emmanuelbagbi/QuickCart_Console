@@ -1,3 +1,4 @@
+
 from User import User
 
 class Customer(User):
@@ -18,4 +19,4 @@ class Customer(User):
         self._order_history.append(order)
 
     def view_history(self):
-        return [order for order in self._order_history]
+        return list(self._order_history)
